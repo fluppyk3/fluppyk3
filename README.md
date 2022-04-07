@@ -1,5 +1,5 @@
 - 👋 oi, eu sou @fluppyk3
-- 👀 estou enteressado em ...estudar
+- 👀 estou interessado em ...estudar
 - 🌱 atualmente apredendo ...python
 - 📫 How to reach me ...williamvieiracv@gmail.com
 
