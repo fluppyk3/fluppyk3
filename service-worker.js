@@ -5,8 +5,8 @@ const APP_FILES = [
   new URL('./', APP_ROOT).href,
   new URL('./index.html', APP_ROOT).href,
   new URL('./manifest.json', APP_ROOT).href,
-  new URL('./icons/icon-192.png', APP_ROOT).href,
-  new URL('./icons/icon-512.png', APP_ROOT).href
+  new URL('./icon-192.png', APP_ROOT).href,
+  new URL('./icon-512.png', APP_ROOT).href
 ];
 
 self.addEventListener('install', event => {
