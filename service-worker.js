@@ -1,5 +1,5 @@
 /* FinTrack PWA service worker — resilient on GitHub Pages project paths. */
-const CACHE_NAME = 'fintrack-shell-v2';
+const CACHE_NAME = 'fintrack-shell-v3';
 const APP_ROOT = new URL('./', self.registration.scope);
 const APP_FILES = [
   new URL('./', APP_ROOT).href,
