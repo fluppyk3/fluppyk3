@@ -152,7 +152,7 @@ function normalizeState(raw){
 }
 function load(){
  try{const raw=localStorage.getItem(KEY);if(raw){state=normalizeState(JSON.parse(raw));$('storageStatus').textContent='Armazenamento local disponível. Último salvamento automático habilitado.'}else{$('storageStatus').textContent='Nenhum dado anterior encontrado. Os dados serão salvos neste navegador.'}}
- catch(e){storageAvailable=false;$('storageStatus').textContent='Atenção: o armazenamento local não pôde ser lido. Exporte um backup e evite fechar esta aba até resolver.';toast('Não foi possível recuperar os dados salvos.');}
+ catch(e){storageAvailable=false;$('storageStatus').textContent='Atenção: o armazenamento local não pôde ser lido. Exporte um backup e evite fechar esta aba até resolver.';showtoast('Não foi possível recuperar os dados salvos.');}
 }
 function save(){try{localStorage.setItem(KEY,JSON.stringify(state));storageAvailable=true;$('storageStatus').textContent='Armazenamento local disponível. Alterações salvas automaticamente.';return true}catch(e){storageAvailable=false;$('storageStatus').textContent='Não foi possível salvar neste navegador. Exporte um backup JSON agora para não perder os dados desta sessão.';toast('Falha ao salvar localmente. Exporte um backup.');return false}}
 function showToast(s){const t=$('toast');t.textContent=s;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),3200)}
